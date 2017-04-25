@@ -78,9 +78,9 @@ project_dir\
 
 Hence, to add this submodule (and its dependency), write:
 ```
-git submodule add https://github.com:PHPMailer/PHPMailer.git libs/PHPMailer
-git submodule add https://github.com:chtimi59/php-log.git libs/PHPLog
-git submodule add https://github.com:chtimi59/php-setup-pack.git setup
+git submodule add https://github.com/PHPMailer/PHPMailer.git libs/PHPMailer
+git submodule add https://github.com/chtimi59/php-log.git libs/PHPLog
+git submodule add https://github.com/chtimi59/php-setup-pack.git setup
 ```
 
 Once, it's done, create a project_dir/*phplog.conf* according your needs:
