@@ -45,11 +45,11 @@ $log->sendEmail($templateName, $lang='en', $replace_arr=NULL, $email=NULL) // se
 ```
 note log id** depend on your *phplog.conf*
 
-Extra email-oriended functions:
+Extra email validation (round-trip) functions:
 ```php
-$log->addCandidate($email, $lang='en'); // create an email-candidate, send the email
-$log->getCandidate($uuid);              // get email-candidate created
-$log->deleteCandidate($uuid);           // delete an email-candiate
+$log->addCandidate($email, $lang='en'); // create a candidate an send the email to him
+$log->getCandidate($uuid);              // get info from created candidate
+$log->deleteCandidate($uuid);           // delete an candiate
 ```
 
 # Setup
@@ -78,9 +78,9 @@ project_dir\
 
 Hence, to add this submodule (and its dependency), write:
 ```
-git submodule add git@github.com:chtimi59/php-log.git libs/PHPMailer
-git submodule add git@github.com:PHPMailer/PHPMailer.git libs/PHPMailer
-git submodule add git@github.com:chtimi59/php-setup-pack.git setup
+git submodule add https://github.com:PHPMailer/PHPMailer.git libs/PHPMailer
+git submodule add https://github.com:chtimi59/php-log.git libs/PHPLog
+git submodule add https://github.com:chtimi59/php-setup-pack.git setup
 ```
 
 Once, it's done, create a project_dir/*phplog.conf* according your needs:
